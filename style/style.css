@@ -1,3 +1,32 @@
+nav ul{
+    list-style: none;
+    padding: .5rem 0 0 1rem;
+}   
+nav ul li{
+    display: inline-block;
+    margin: 0 1.7rem  0 0;
+    font-weight: 500;
+}
+
+header h4{
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 120%;
+    vertical-align: sub;
+}
+
+header img{
+    width: 5rem;
+}
+
+hr{
+    margin: 0;
+}
+
+header ul li::first-letter{
+    text-transform: capitalize;
+}
+
 #faq .answer > p, #faq ol li{
     padding: .5rem 0;
 }

@@ -12,6 +12,13 @@
 <body>
     
     <?php
+        $headLinks = [
+            'introduzione',
+            'norme sulla privacy',
+            'termini di servizio',
+            'tecnologie',
+            'domande frequenti',
+        ];
         $faq = [
             [
                 'question' => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
@@ -79,13 +86,25 @@
                 'question' => "Quando faccio clic sui risultati della Ricerca Google, le mie chiavi di ricerca vengono inviate ai siti web?",
                 'answer' => "<p>In alcuni casi sì. Quando fai clic su un risultato della Ricerca Google, il tuo browser web potrebbe reindirizzare alla pagina web di destinazione anche l'indirizzo Internet, o URL, della pagina dei risultati di ricerca sotto forma di URL referrer. Talvolta, l'URL della pagina dei risultati di ricerca potrebbe contenere la query di ricerca che hai inserito. Se utilizzi la ricerca SSL (la funzione di ricerca criptata di Google), nella maggior parte dei casi i termini di ricerca non vengono inviati come parte dell'URL negli URL referrer. Questo comportamento può fare eccezione, ad esempio se utilizzi alcuni browser meno diffusi. Ulteriori informazioni sulla ricerca SSL sono disponibili qui. Le query di ricerca o le informazioni contenute nell'URL referrer potrebbero essere disponibili mediante Google Analytics o un'API (Application Programming Interface). Inoltre, gli inserzionisti potrebbero ricevere informazioni relative all' esatte parole chiave che hanno determinato il clic su un annuncio.</p>"
             ],
-        ]
+        ];
     ?>
 
+    <header class="pt-3 px-3 text-secondary">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png" alt="logo">
+        <h4>
+            Privacy e termini
+        </h4>
+        <nav>
+            <ul>
+                <?php foreach ($headLinks as $link){ ?>
+                <li><?php echo $link; ?></li>
+                <?php } ?>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
     <main>
-        <h1>
-            Google FAQ
-        </h1>
 
         <?php 
             foreach ($faq  as $qa) { 
