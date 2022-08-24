@@ -91,10 +91,10 @@
 
     <header class="pt-3 px-3 text-secondary">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png" alt="logo">
-        <h4>
+        <h4 class="fw-normal">
             Privacy e termini
         </h4>
-        <nav>
+        <nav class="mt-2">
             <ul>
                 <?php foreach ($headLinks as $link){ ?>
                 <li><?php echo $link; ?></li>
