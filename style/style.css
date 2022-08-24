@@ -1,3 +1,11 @@
 #faq .answer > p, #faq ol li{
     padding: .5rem 0;
 }
+
+.answer ol:nth-child(1){
+    list-style: lower-alpha;
+}
+
+.answer a{
+    text-decoration: none;
+}
