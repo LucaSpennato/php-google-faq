@@ -74,10 +74,20 @@
         Google FAQ
     </h1>
 
-    <?php  foreach ($faq  as $qa) { ?>
-    <div>
-        <?php echo $qa['question']; ?>
-    </div>
+    <?php 
+        foreach ($faq  as $qa) { 
+            $question = $qa['question'];
+            $answer = $qa['answer'];
+    ?>
+            
+        <div>
+            <h5>
+                <?php echo $question ?>
+            </h5>
+            <p>
+                <?php echo $answer ?>
+            </p>
+        </div>
     <?php } ?>
 
 </body>
